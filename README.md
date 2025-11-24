@@ -4,13 +4,14 @@
 
 **TermiDL** is a powerful, terminal-based download manager with a rich Textual User Interface (TUI). It unifies downloading from torrents, direct links, and YouTube into a single, easy-to-use application.
 
+```
  _____                   _  ______ _     
 |_   _|                 (_) |  _  \ |    
   | | ___ _ __ _ __ ___  _  | | | | |    
   | |/ _ \ '__| '_ ` _ \| | | | | | |    
   | |  __/ |  | | | | | | | | |/ /| |____
   \_/\___|_|  |_| |_| |_|_| |___/ \_____/
-                                         
+```                                       
                                          
 
 ## ✨ Features
