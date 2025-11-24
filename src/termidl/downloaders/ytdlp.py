@@ -1,5 +1,6 @@
 import asyncio
 import yt_dlp
+import os
 from .base import BaseDownloader
 
 class YtDlpDownloader(BaseDownloader):
@@ -45,6 +46,11 @@ class YtDlpDownloader(BaseDownloader):
 
         if d['status'] == 'downloading':
             try:
+                # Update name if available
+                if 'filename' in d:
+                    # Try to get clean filename or title
+                    self.name = os.path.basename(d['filename'])
+                
                 p = d.get('_percent_str', '0%').replace('%','')
                 percent = float(p)
                 speed = d.get('_speed_str', 'N/A')
